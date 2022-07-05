@@ -54,11 +54,14 @@
   top: 26px;
 }
 .fa-solid{
-  position: relative;
-  top: 30px;
-  left: 65px;
-
+  
+    position: relative;
+    top: 25px;
+    left: 65px;
+    font-size: 22px;
 }
+
+
 @media only screen and (max-width: 445px) {
   .fa-solid{
     position: relative;
@@ -79,4 +82,61 @@
   /* border:2px solid black; */
   padding-left: 7px;
 }
+  /* video media ............... */
+
+ .videoContainer video{
+  width: 293px !important; 
+    height: 80vh;
+    /* object-fit: cover; */
 }
+.videoContainer h2{
+  position: relative;
+  /* border: 2px solid blue; */
+  top: -244px !important;
+  left: 48px !important;
+  font-size: 29px !important;
+ }
+ .fa-play{
+  
+  top: -336px !important;
+  left: 140px !important;
+  font-size: 39px !important;
+}
+}
+  
+ 
+
+
+/* Video-container............................................................................................................. */
+
+.videoContainer{
+  padding:0px;
+}
+
+.videoContainer video{
+  width: 394px;
+    height: 80vh;
+    /* object-fit: cover; */
+}
+.playbtn{
+  border:2px solid red;
+}
+ .fa-play{
+  position: relative;
+  top: -384px;
+  left: 186px;
+  color: #140101;
+  font-size: 49px;
+  
+ }
+ .videoContainer h2{
+  position: relative;
+  /* border: 2px solid blue; */
+  top: -259px;
+  left: 77px;
+  color: white;
+  font-size: 33px;
+ }
+ video{
+  /* border:4px solid red; */
+ }

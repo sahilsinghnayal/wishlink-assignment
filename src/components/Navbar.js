@@ -15,7 +15,7 @@ function Navbar() {
       </div>
       <div className="navname"> <p>Maiteryi dutta <img src={verified} alt="" /></p> </div>
     
-      <i class="fa-solid fa-magnifying-glass"></i>
+      <i className="fa-solid fa-magnifying-glass"></i>
         
     </div>
   );
