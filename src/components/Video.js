@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import dress from "../Images/dress.png";
+import VideoCard from "./VideoCard";
 
 function Video() {
   const [play, setPlay] = useState(false);
@@ -29,8 +30,10 @@ function Video() {
             <h2>Shop My Closet</h2>{" "}
           </>
         ) : (
-          ""
+          <VideoCard/>
         )}
+       
+      
       </div>
     </>
   );

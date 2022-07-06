@@ -1,6 +1,7 @@
 import React from 'react';
 import './App.css';
 import Navbar from './components/Navbar';
+import Tagged from './components/Tagged';
 import Video from './components/Video';
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
      <div className="container">
       <Navbar/>
       <Video/>
+      <Tagged/>
      </div>
     </div>
   );
