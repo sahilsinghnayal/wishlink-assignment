@@ -112,25 +112,23 @@
     position: relative !important;
     box-shadow: 0px -10px white !important;
     top: -7px !important;
-    
-}
-.taggedCard img{
-  width: 125px;
-}
-.taggedbtn {
-  position: relative;
-  background: #021927;
-  color: white;
-  padding: 2px;
-  border-radius: 15px;
-  width: 114px;
-  top: -14px;
-  left: 1px !important;
-}
-.head1 {
-  font-size: 17px !important;
-  
-}
+  }
+  .taggedCard img {
+    width: 125px;
+  }
+  .taggedbtn {
+    position: relative;
+    background: #021927;
+    color: white;
+    padding: 2px;
+    border-radius: 15px;
+    width: 114px;
+    top: -14px;
+    left: 1px !important;
+  }
+  .head1 {
+    font-size: 17px !important;
+  }
 }
 
 /* Video-container............................................................................................................. */
@@ -251,4 +249,29 @@
   top: -20px;
   left: 85px;
   font-size: 11px;
+}
+
+/* completeContainer//////////////////////// */
+.completeContainer {
+  border: 2px solid #f1f4f9;
+  background: #f1f4f9;
+  border-radius: 15px;
+}
+.cardoffer {
+  left: 12px;
+  top: -304px;
+  color: white;
+  /* border: 2px solid red; */
+  width: 125px;
+  border-radius: 9px;
+  background: #e91e63;
+  font-size: 13px;
+  padding: 3px;
+  position: relative;
+}
+
+.favoritecontainer{  
+border: 2px solid #f1f4f9;
+background: white;
+border-radius: 15px;
 }
