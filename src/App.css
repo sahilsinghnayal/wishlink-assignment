@@ -12,7 +12,7 @@
   flex-direction: column;
 }
 .container {
-  border: 2px solid red;
+  /* border: 2px solid red; */
   height: 100vh;
   width: 80%;
   max-width: 400px;
@@ -111,7 +111,7 @@
     box-shadow: -7px, black !important;
     position: relative !important;
     box-shadow: 0px -10px white !important;
-    top: -7px !important;
+    top: 19px !important;
   }
   .taggedCard img {
     width: 125px;
@@ -125,10 +125,49 @@
     width: 114px;
     top: -14px;
     left: 1px !important;
+    
   }
+  
   .head1 {
     font-size: 17px !important;
   }
+  .colcontainer {
+    display: flex;
+    gap: 6px !important;
+    margin-left: 22px !important;
+  }
+  .dress_col1 {
+    width: 121px !important;
+    height: 258px !important;
+    
+}
+.img1_col1 {
+  width: 120px !important;
+  height: 64px !important;
+
+}
+.img3_col1 {
+  width: 122px !important;
+  height: 133px !important;
+  
+}
+.img2_col1 {
+  width: 123px !important;
+  height: 119px !important;
+  margin-top: 7px !important;
+}
+.favoritecontainerbtn{
+  width: 280px !important;
+}
+.footer{
+ 
+  top: 135px  !important;
+  left: 75px !important;
+}
+.favoritecontainer {
+ 
+  height: 120vh !important;
+}
 }
 
 /* Video-container............................................................................................................. */
@@ -189,7 +228,7 @@
   top: -18px;
 }
 .videocardbtn {
-  font-size: 16px;
+  
   border-radius: 11px;
   color: white;
   background: black;
@@ -199,6 +238,11 @@
   top: 13px;
   width: 58px;
   height: 34px;
+}
+.videocardbtn a{
+  text-decoration: none;
+  color:white;
+  font-size: 10px;
 }
 /* Tagged............................................................. */
 .taggedcontainer {
@@ -210,13 +254,16 @@
   box-shadow: -7px, black;
   position: relative;
   box-shadow: 0px -10px white;
-  top: -6px;
+  top: 22px;
+  border: 2px solid #f1f4f9;
+  /* scroll-snap-align: start  */
 }
 .head1 {
   font-size: 21px;
   font-weight: 700;
   margin-left: 22px;
   margin-top: 27px;
+  line-height: 25px;
 }
 .cardcontainer {
   display: flex;
@@ -243,6 +290,10 @@
   top: -14px;
   left: 22px;
 }
+.taggedbtn a{
+  text-decoration: none;
+  color:white;
+}
 .taggedoff {
   color: #dd5f2d;
   position: relative;
@@ -256,6 +307,7 @@
   border: 2px solid #f1f4f9;
   background: #f1f4f9;
   border-radius: 15px;
+  margin-top: 43px;
 }
 .cardoffer {
   left: 12px;
@@ -269,9 +321,71 @@
   padding: 3px;
   position: relative;
 }
+/* favoritecontainer///////////////////////////////////////////////// */
+.favoritecontainer {
+  border: 2px solid #f1f4f9;
+  background: white;
+  border-radius: 15px;
+  height: 139vh;
+}
+.favoritecontainer p {
+  font-size: 12px;
+  color: gray;
+  margin-left: 22px;
+  margin-top: 3px;
+}
+.col1 {
+  display: flex;
+  flex-direction: column;
+}
+.img1_col1 {
+  width: 160px;
+  height: 90px;
+  margin-top: 15px;
+}
+.dress_col1 {
+  width: 160px;
+  height: 284px;
+  border-radius: 15px;
+  margin-top: 7px;
+}
+.img2_col1 {
+  width: 160px;
+  height: 160px;
+  margin-top: 7px;
+}
+.img3_col1 {
+  width: 160px;
+  height: 160px;
+  margin-top: 7px;
+}
+.colcontainer {
+  display: flex;
+  gap: 13px;
+  margin-left: 34px;
+}
+.favoritecontainerbtn{
+  padding: 5px;
+  border-radius: 15px;
+  width: 335px;
+  display: block;
+  margin: auto;
+  margin-top: 21px;
+  height: 28px;
+  background: white;
+  border: 1px solid #666666;
+  
+  font-weight: 600;
+  cursor: pointer;
+}
+.favoritecontainerbtn a{
+   text-decoration: none;
+   color:#666666;
+  font-size: 14px;
 
-.favoritecontainer{  
-border: 2px solid #f1f4f9;
-background: white;
-border-radius: 15px;
+}
+.footer{
+  position: relative;
+  top: 91px;
+  left: 135px;
 }
