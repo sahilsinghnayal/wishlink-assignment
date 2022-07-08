@@ -11,9 +11,8 @@ function VideoCard() {
         <p>Long Slit Dress</p>
         <p>₹1000 <del> ₹2000</del> </p>
         <p className='p_tag_video_card'>(50% Off)</p>
-        </div>
+        </div>   
         <button className='videocardbtn'><a href={Link} target="_blank" rel="noreferrer">Shop now</a></button>
- 
     </div>
   )
 }
