@@ -100,10 +100,14 @@ function Tagged() {
             <img className="img1_col1" src={img1} alt="img2" />
             <img className="img3_col1" src={img3} alt="img3" />
           </div>
+          
         </div>
+        <div className="footercontainer">  
         <button className="favoritecontainerbtn"><a href={Link2} target="_blank" rel="noreferrer">See All Products</a></button>
         <p className="footer">Powerd By Wishlink</p>
+        </div>
       </div>
+    
     </>
   );
 }

@@ -25,9 +25,11 @@ function Video() {
           />
         </video>
         {showbutton ? (
-          <>
+          <> 
+          
             <i onClick={favButtonPress} className="fa-solid fa-play"></i>
             <h2>Shop My Closet</h2>{" "}
+            
           </>
         ) : (
           <VideoCard/>
