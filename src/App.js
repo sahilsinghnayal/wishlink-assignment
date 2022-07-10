@@ -4,11 +4,13 @@ import Favorites from "./components/Favorites";
 import Navbar from "./components/Navbar";
 import Tagged from "./components/Tagged";
 import Video from "./components/Video";
+import WhatsApp from "./components/WhatsApp";
 
 function App() {
   return (
     <div className="App">
       <div className="container">
+        <WhatsApp/>
         <Navbar />
         <Video />
         <Tagged productname={"Tagged Products (3)"} productCount={3} />

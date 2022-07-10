@@ -37,7 +37,7 @@ function Video() {
                 lineHeight:"195px"
               }}
             >
-              <i onClick={favButtonPress} className="fa-solid fa-play"></i>
+              <i onClick={favButtonPress} style={{color:"white"}} className="fa-solid fa-play"></i>
               <h2>Shop My Closet</h2>{" "}
             </div>
           ) : (
