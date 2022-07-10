@@ -21,12 +21,12 @@
 /* navbar.................................................................................................................. */
 .nav {
   padding: 6px;
-    border: 2px solid black;
-    display: flex;
-    position: fixed;
-    background: white;
-    z-index: 50;
-    width: 379px;
+  /* border: 2px solid black; */
+  display: flex;
+  position: fixed;
+  background: white;
+  z-index: 50;
+  width: 379px;
 }
 
 .navbtn {
@@ -108,19 +108,19 @@
     left: 3px !important;
   }
   .taggedcontainer {
-    /* border: 3px solid rgb(0, 0, 0); */
-    margin-top: -96px !important;
-    height: 52vh !important;
-    border-radius: 16px !important;
-    /* background: #f1f4f9; */
-    box-shadow: -7px, black !important;
-    position: relative !important;
-    box-shadow: 0px -10px white !important;
-    top: 19px !important;
-
+    height: 94vh !important;
   }
   .taggedCard img {
     width: 125px;
+  }
+  .taggedCard{
+    
+  
+    height: 256px !important;
+    /* border: 2px solid yellow; */
+    width: 142px !important;
+    font-size: 13px !important;
+    
   }
   .taggedbtn {
     position: relative;
@@ -131,9 +131,8 @@
     width: 114px;
     top: -14px;
     left: 1px !important;
-    
   }
-  
+
   .head1 {
     font-size: 17px !important;
   }
@@ -145,41 +144,38 @@
   .dress_col1 {
     width: 121px !important;
     height: 258px !important;
-    
-}
-.img1_col1 {
-  width: 120px !important;
-  height: 64px !important;
-
-}
-.img3_col1 {
-  width: 122px !important;
-  height: 133px !important;
-  
-}
-.img2_col1 {
-  width: 123px !important;
-  height: 119px !important;
-  margin-top: 7px !important;
-}
-.favoritecontainerbtn{
-  width: 280px !important;
-}
-.footer{
- 
-  top: 135px  !important;
-  left: 75px !important;
-}
-.favoritecontainer {
- 
-  height: 120vh !important;
-}
+  }
+  .img1_col1 {
+    width: 120px !important;
+    height: 64px !important;
+  }
+  .img3_col1 {
+    width: 122px !important;
+    height: 133px !important;
+  }
+  .img2_col1 {
+    width: 123px !important;
+    height: 119px !important;
+    margin-top: 7px !important;
+  }
+  .favoritecontainerbtn {
+    width: 280px !important;
+  }
+  .footer {
+    top: 135px !important;
+    left: 75px !important;
+  }
+  .favoritecontainer {
+    height: 120vh !important;
+    margin-top: 20px !important;
+  }
 }
 
 /* Video-container............................................................................................................. */
 
 .videoContainer {
   padding: 0px;
+  margin-bottom: 569px;
 }
 
 .videoContainer video {
@@ -218,7 +214,7 @@
   /* border: 2px solid violet; */
   display: flex;
   position: relative;
-  top: -169px;
+  top: 0px;
   border-radius: 9px;
 }
 .videocard img {
@@ -237,7 +233,6 @@
   top: -18px;
 }
 .videocardbtn {
-  
   border-radius: 11px;
   color: white;
   background: black;
@@ -248,16 +243,16 @@
   width: 58px;
   height: 34px;
 }
-.videocardbtn a{
+.videocardbtn a {
   text-decoration: none;
-  color:white;
+  color: white;
   font-size: 10px;
 }
 /* Tagged............................................................. */
 .taggedcontainer {
   /* border: 3px solid rgb(0, 0, 0);  */
-  margin-top: 545px;
-  height: 62vh;
+  /* margin-top: 545px; */
+  height: 106vh;
   border-radius: 17px;
   background: #f1f4f9;
   box-shadow: -7px, black;
@@ -266,7 +261,6 @@
   top: 22px;
   z-index: 2000;
   border: 2px solid #f1f4f9;
-  /* scroll-snap-align: start  */
 }
 .head1 {
   font-size: 21px;
@@ -277,6 +271,7 @@
 }
 .cardcontainer {
   display: flex;
+  flex-wrap: wrap;
 }
 .taggedCard {
   margin: 3px;
@@ -300,9 +295,9 @@
   top: -14px;
   left: 22px;
 }
-.taggedbtn a{
+.taggedbtn a {
   text-decoration: none;
-  color:white;
+  color: white;
 }
 .taggedoff {
   color: #dd5f2d;
@@ -320,7 +315,6 @@
   margin-top: 43px;
   z-index: 1000;
   position: relative;
-  
 }
 .cardoffer {
   left: 12px;
@@ -337,12 +331,12 @@
 /* favoritecontainer///////////////////////////////////////////////// */
 .favoritecontainer {
   z-index: 700;
-    border: 2px solid #f1f4f9;
-    background: white;
-    border-radius: 15px;
-    height: 139vh;
-    position: relative;
-    margin-top: -24px;
+  border: 2px solid #f1f4f9;
+  background: white;
+  border-radius: 15px;
+  height: 139vh;
+  position: relative;
+  margin-top: 21px;
 }
 .favoritecontainer p {
   font-size: 12px;
@@ -376,17 +370,17 @@
   margin-top: 7px;
 }
 .colcontainer {
-  height: 114vh;
-    display: flex;
-    gap: 13px;
-    margin-left: -8px;
-    position: relative;
-    background: white;
-    z-index: 1000;
-    /* border: 2px solid; */
-    width: 400px;
+  /* height: 114vh; */
+  display: flex;
+  gap: 13px;
+  margin-left: 18px;
+  position: relative;
+  background: white;
+  z-index: 1000;
+  /* border: 2px solid; */
+  width: 400px;
 }
-.favoritecontainerbtn{
+.favoritecontainerbtn {
   padding: 5px;
   border-radius: 15px;
   width: 335px;
@@ -396,21 +390,20 @@
   height: 28px;
   background: white;
   border: 1px solid #666666;
-  
+
   font-weight: 600;
   cursor: pointer;
 }
-.favoritecontainerbtn a{
-   text-decoration: none;
-   color:#666666;
+.favoritecontainerbtn a {
+  text-decoration: none;
+  color: #666666;
   font-size: 14px;
-
 }
-.footer{
+.footer {
   position: relative;
   top: 91px;
   left: 135px;
 }
-.footercontainer{
+.footercontainer {
   background: white;
 }
