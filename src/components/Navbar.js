@@ -2,6 +2,7 @@ import React from "react";
 import left from "../Images/left.png";
 import profile from "../Images/profile.png";
 import verified from "../Images/verified.png"
+import searchic from "../Images/searchic.png"
 
 import "../App.css";
 function Navbar() {
@@ -15,7 +16,7 @@ function Navbar() {
       </div>
       <div className="navname"> <p>Maiteryi dutta <img src={verified} alt="" /></p> </div>
     
-      <i className="fa-solid fa-magnifying-glass"></i>
+      <img className="search" src={searchic} alt="search"/>
         
     </div>
   );
