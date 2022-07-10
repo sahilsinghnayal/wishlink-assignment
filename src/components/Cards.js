@@ -15,7 +15,7 @@ function Cards() {
         </p>
         <p className=" taggedoff">(50% Off)</p>
         <button className="taggedbtn">
-          {" "}
+          
           <a href={Link} target="_blank" rel="noreferrer">
             Shop now
           </a>

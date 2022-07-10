@@ -66,7 +66,7 @@
   font-size: 22px;
 }
 
-@media only screen and (max-width: 445px) {
+@media only screen and (max-width: 480px) {
   .fa-solid {
     position: relative;
     top: 25px;
@@ -93,34 +93,27 @@
     /* object-fit: cover; */
   }
   .videoContainer h2 {
-    position: relative;
-    /* border: 2px solid blue; */
-    top: -244px !important;
-    left: 48px !important;
     font-size: 29px !important;
   }
   .fa-play {
-    top: -336px !important;
-    left: 140px !important;
+    /* top: -336px !important;
+    left: 140px !important; */
     font-size: 39px !important;
   }
   .videocard {
     left: 3px !important;
   }
   .taggedcontainer {
-    height: 94vh !important;
+    height: 85vh !important;
   }
   .taggedCard img {
     width: 125px;
   }
-  .taggedCard{
-    
-  
+  .taggedCard {
     height: 256px !important;
     /* border: 2px solid yellow; */
     width: 142px !important;
     font-size: 13px !important;
-    
   }
   .taggedbtn {
     position: relative;
@@ -169,6 +162,11 @@
     height: 120vh !important;
     margin-top: 20px !important;
   }
+  .buttonvideo {
+    top: 346px !important;
+
+    margin-left: 39px !important;
+  }
 }
 
 /* Video-container............................................................................................................. */
@@ -189,33 +187,23 @@
 .playbtn {
   border: 2px solid red;
 }
-.fa-play {
-  position: fixed;
-  left: 738px;
-  color: #241818;
-  font-size: 49px;
-  top: 245px;
-}
+
 .videoContainer h2 {
-  position: fixed;
-  /* border: 2px solid blue; */
-  top: 343px;
-  left: 630px;
   color: #262424;
   font-size: 33px;
 }
 /* videocard ......*/
 .videocard {
-  height: 95px;
-  padding: 20px;
+  height: 66px;
+
   background: white;
-  width: 285px;
-  left: 50px;
-  /* border: 2px solid violet; */
+  width: 260px;
+
   display: flex;
-  position: relative;
-  top: 0px;
+  position: fixed;
+  top: 416px;
   border-radius: 9px;
+  margin-left: 64px;
 }
 .videocard img {
   width: 50px;
@@ -336,7 +324,7 @@
   border-radius: 15px;
   height: 139vh;
   position: relative;
-  margin-top: 21px;
+  margin-top: 27px;
 }
 .favoritecontainer p {
   font-size: 12px;
@@ -406,4 +394,14 @@
 }
 .footercontainer {
   background: white;
+}
+.buttonvideo {
+  flex-direction: column;
+  position: fixed;
+  top: 254px;
+  display: flex;
+  align-items: center;
+  margin-left: 69px;
+}
+.bi-play {
 }
