@@ -10,11 +10,15 @@
   height: 100vh;
   display: flex;
   flex-direction: column;
+  overflow-y: hidden; /* Hide vertical scrollbar */
+  overflow-x: hidden; /* Hide horizontal scrollbar */
+  -ms-overflow-style: none;  /* Internet Explorer 10+ */
+  scrollbar-width: none; 
+
 }
 .container {
-  /* border: 2px solid red; */
-  height: 100vh;
   width: 80%;
+  overflow: scroll;
   max-width: 400px;
 }
 
@@ -60,18 +64,10 @@
   top: 26px;
 }
 .fa-solid {
-  position: relative;
-  top: 25px;
-  left: 65px;
   font-size: 22px;
 }
 
-@media only screen and (max-width: 480px) {
-  .fa-solid {
-    position: relative;
-    top: 25px;
-    left: 27px;
-  }
+@media only screen and (max-width: 445px) {
   .navname p {
     margin-top: 21px;
     /* border: 2px solid greenyellow; */
@@ -88,42 +84,46 @@
   /* video media ............... */
 
   .videoContainer video {
-    width: 293px !important;
-    height: 80vh;
+    width: 100% !important;
+    max-width: 393px;
+    margin: auto;
+    height: 530px;
+    max-height: 65vh;
     /* object-fit: cover; */
   }
   .videoContainer h2 {
+    position: relative;
     font-size: 29px !important;
   }
   .fa-play {
-    /* top: -336px !important;
-    left: 140px !important; */
+    top: -336px !important;
+    left: 140px !important;
     font-size: 39px !important;
   }
   .videocard {
     left: 3px !important;
   }
   .taggedcontainer {
-    height: 85vh !important;
+    height: 94vh !important;
   }
   .taggedCard img {
-    width: 125px;
+    width: 100px;
+    margin: auto;
+    display: flex;
   }
-  .taggedCard {
-    height: 256px !important;
+  .taggedCard{
     /* border: 2px solid yellow; */
-    width: 142px !important;
     font-size: 13px !important;
+    
   }
   .taggedbtn {
     position: relative;
+    margin-top: 15px;
     background: #021927;
     color: white;
     padding: 2px;
     border-radius: 15px;
     width: 114px;
-    top: -14px;
-    left: 1px !important;
   }
 
   .head1 {
@@ -132,7 +132,6 @@
   .colcontainer {
     display: flex;
     gap: 6px !important;
-    margin-left: 22px !important;
   }
   .dress_col1 {
     width: 121px !important;
@@ -155,17 +154,11 @@
     width: 280px !important;
   }
   .footer {
-    top: 135px !important;
-    left: 75px !important;
+
   }
   .favoritecontainer {
     height: 120vh !important;
     margin-top: 20px !important;
-  }
-  .buttonvideo {
-    top: 346px !important;
-
-    margin-left: 39px !important;
   }
 }
 
@@ -173,37 +166,44 @@
 
 .videoContainer {
   padding: 0px;
-  margin-bottom: 569px;
+  position: sticky;
+  top: 80px;
+  margin-top: 83px;
 }
 
 .videoContainer video {
-  width: 393px;
-  height: 75vh;
-  margin-top: 83px;
-  /* object-fit: cover; */
-  position: fixed;
+  width: 100% !important;
+  min-width: 300px;
+  margin: auto;
+  height: 530px;
+  max-height: 65vh;
 }
 
 .playbtn {
   border: 2px solid red;
 }
-
+.fa-play {
+  color: #241818;
+  font-size: 49px;
+}
 .videoContainer h2 {
   color: #262424;
   font-size: 33px;
 }
+.play-icon{
+
+}
 /* videocard ......*/
 .videocard {
-  height: 66px;
-
+  height: 95px;
+  margin: 30px;
+  padding: 10px;
   background: white;
-  width: 260px;
-
+  min-width: 230px;
   display: flex;
-  position: fixed;
-  top: 416px;
+  align-items: flex-start;
+  justify-content: space-between;
   border-radius: 9px;
-  margin-left: 64px;
 }
 .videocard img {
   width: 50px;
@@ -211,23 +211,20 @@
   margin-top: 5px;
 }
 .cardinfo {
-  margin-left: 8px;
+
   font-size: 13px;
 }
 .p_tag_video_card {
-  left: 78px;
+  font-size: 12px;
   color: #dd5f2d;
-  position: relative;
-  top: -18px;
+  margin-top: 10px;
+  color: #dd5f2d;
+
 }
 .videocardbtn {
   border-radius: 11px;
   color: white;
   background: black;
-  /* border: 2px solid yellow; */
-  position: relative;
-  left: 53px;
-  top: 13px;
   width: 58px;
   height: 34px;
 }
@@ -241,6 +238,7 @@
   /* border: 3px solid rgb(0, 0, 0);  */
   /* margin-top: 545px; */
   height: 106vh;
+
   border-radius: 17px;
   background: #f1f4f9;
   box-shadow: -7px, black;
@@ -259,14 +257,14 @@
 }
 .cardcontainer {
   display: flex;
+  justify-content: space-between;
   flex-wrap: wrap;
 }
 .taggedCard {
   margin: 3px;
   padding: 9px;
-  height: 311px;
   /* border: 2px solid yellow; */
-  width: 184px;
+  width: 45%;
   font-size: 14px;
   line-height: 20px;
   background: white;
@@ -277,11 +275,10 @@
   position: relative;
   background: #021927;
   color: white;
+  margin-top: 15px;
   padding: 2px;
   border-radius: 15px;
   width: 120px;
-  top: -14px;
-  left: 22px;
 }
 .taggedbtn a {
   text-decoration: none;
@@ -324,13 +321,11 @@
   border-radius: 15px;
   height: 139vh;
   position: relative;
-  margin-top: 27px;
+  margin-top: 21px;
 }
 .favoritecontainer p {
   font-size: 12px;
   color: gray;
-  margin-left: 22px;
-  margin-top: 3px;
 }
 .col1 {
   display: flex;
@@ -365,8 +360,6 @@
   position: relative;
   background: white;
   z-index: 1000;
-  /* border: 2px solid; */
-  width: 400px;
 }
 .favoritecontainerbtn {
   padding: 5px;
@@ -388,20 +381,11 @@
   font-size: 14px;
 }
 .footer {
-  position: relative;
-  top: 91px;
-  left: 135px;
+
 }
 .footercontainer {
-  background: white;
-}
-.buttonvideo {
-  flex-direction: column;
-  position: fixed;
-  top: 254px;
   display: flex;
-  align-items: center;
-  margin-left: 69px;
-}
-.bi-play {
+    flex-direction: column;
+    align-items: center;
+  background: white;
 }

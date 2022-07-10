@@ -13,9 +13,9 @@ function Cards() {
         <p>
           ₹1000 <del> ₹2000</del>
         </p>
-        <p className=" taggedoff">(50% Off)</p>
+        <p className="">(50% Off)</p>
         <button className="taggedbtn">
-          
+          {" "}
           <a href={Link} target="_blank" rel="noreferrer">
             Shop now
           </a>
