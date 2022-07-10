@@ -34,6 +34,7 @@ function Video() {
                 display: "flex",
                 flexDirection: "column",
                 alignItems: "center",
+                lineHeight:"195px"
               }}
             >
               <i onClick={favButtonPress} className="fa-solid fa-play"></i>
